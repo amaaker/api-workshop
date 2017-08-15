@@ -30,8 +30,8 @@ var app = {
   typeAhead: function(e){
   		var el = e.target;
     	var val = el.value;
-  		app.queryAutocomplete(val, function(err, data){console.log(data));
-  },
+  		app.queryAutocomplete(val, function(err, data){console.log(data);
+  })
   
   queryAutocomplete: throttle(function(text, callback){
   $.ajax({
