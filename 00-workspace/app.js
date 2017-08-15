@@ -106,4 +106,9 @@ var app = {
 
 $('#search-from-input').on('keyup', {input:'from'}, app.typeAhead);
 $('#clear-from-search').on('click', {input:'from'}, app.clearSearch);
+$('#search-from-input').on('focus', function(){app.activeSearch = 'from'});
+
+$('#search-to-input').on('keyup', {input:'to'}, app.typeAhead);
+$('#search-to-input').on('focus', function(){app.activeSearch = 'to'});
+$('#clear-to-search').on('click', {input:'to'}, app.clearSearch);
 
